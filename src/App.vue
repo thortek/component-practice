@@ -3,12 +3,14 @@
     <v-content>
       <person-grid :people="people"></person-grid>
      <!--  <v-btn @click="getData">Get Data!!</v-btn> -->
+     <tanner-thelin></tanner-thelin>
     </v-content>
   </v-app>
 </template>
 
 <script>
 import PersonGrid from './components/PersonGrid'
+import TannerThelin from './components/developers/TannerThelin.vue';
 //import { people } from './assets/people'
 import axios from 'axios'
 
@@ -16,6 +18,7 @@ export default {
   name: 'App',
   components: {
     PersonGrid,
+    TannerThelin
   },
   data: () => {
     return {
