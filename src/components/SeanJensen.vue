@@ -1,7 +1,7 @@
 <template>
     <v-container>
         <div id="title-div">
-            <h1 class="glow">DE<span class="offset">V</span>ELOPMENT</h1>
+            <h1 class="glow">SE<span class="offset">A</span>N JENSEN</h1>
         </div>
     </v-container>
 
@@ -23,6 +23,7 @@ export default {
   border-radius:20px;
   margin: auto;
   animation: border-flicker 2s linear infinite;
+  background-color: black;
 }
 
 #title-div h1 {
