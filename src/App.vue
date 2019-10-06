@@ -1,24 +1,23 @@
 <template>
   <v-app>
-    <v-content>
+    <v-content  class="d-flex flex-column align-center">
       <person-grid :people="people"></person-grid>
      <!--  <v-btn @click="getData">Get Data!!</v-btn> -->
-     <tanner-thelin></tanner-thelin>
+      <austin-wright></austin-wright>
     </v-content>
   </v-app>
 </template>
 
 <script>
 import PersonGrid from './components/PersonGrid'
-import TannerThelin from './components/developers/TannerThelin.vue';
+import AustinWright from './components/AustinWright.vue';
 //import { people } from './assets/people'
 import axios from 'axios'
-
 export default {
   name: 'App',
   components: {
     PersonGrid,
-    TannerThelin
+    AustinWright
   },
   data: () => {
     return {
@@ -37,7 +36,7 @@ export default {
       let vm = this
       return axios.get('https://swapi.co/api/people').then(response => {
         vm.people = response.data.results
-      }).catch(error => console.error(error))
+      }).catch(error => {throw error})
     }
   }
 }
