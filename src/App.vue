@@ -10,7 +10,7 @@
 
 <script>
 import PersonGrid from './components/PersonGrid'
-import AustinWright from './components/AustinWright.vue';
+import AustinWright from './developers/AustinWright.vue';
 //import { people } from './assets/people'
 import axios from 'axios'
 
