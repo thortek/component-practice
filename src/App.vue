@@ -17,7 +17,7 @@ export default {
   name: 'App',
   components: {
     PersonGrid,
-    AustinWright,
+    AustinWright
   },
   data: () => {
     return {
