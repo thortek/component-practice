@@ -13,13 +13,11 @@ import PersonGrid from './components/PersonGrid'
 import AustinWright from './developers/AustinWright.vue';
 //import { people } from './assets/people'
 import axios from 'axios'
-
 export default {
   name: 'App',
   components: {
     PersonGrid,
     AustinWright
-
   },
   data: () => {
     return {
