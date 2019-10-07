@@ -13,7 +13,11 @@
 </template>
 
 <script>
-
+export default {
+    data: () => ({
+      name: 'John Doe',
+    }),
+}
 </script>
 
 <style scoped>
