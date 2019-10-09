@@ -11,12 +11,7 @@
 
 <script>
 import PersonGrid from './components/PersonGrid'
-<<<<<<< HEAD
 import AustinWright from './developers/AustinWright.vue';
-=======
-import AustinWright from './developers/AustinWright.vue'
-import ThorAnderson from './developers/ThorAnderson.vue'
->>>>>>> upstream/developers
 //import { people } from './assets/people'
 import axios from 'axios'
 export default {
@@ -24,10 +19,6 @@ export default {
   components: {
     PersonGrid,
     AustinWright,
-<<<<<<< HEAD
-=======
-    ThorAnderson
->>>>>>> upstream/developers
   },
   data: () => {
     return {
