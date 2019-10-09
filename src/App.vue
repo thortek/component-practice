@@ -4,14 +4,19 @@
       <person-grid :people="people"></person-grid>
      <!--  <v-btn @click="getData">Get Data!!</v-btn> -->
       <austin-wright></austin-wright>
+      <thor-anderson></thor-anderson>
     </v-content>
   </v-app>
 </template>
 
 <script>
 import PersonGrid from './components/PersonGrid'
+<<<<<<< HEAD
 import AustinWright from './developers/AustinWright.vue';
-import LoganUibel from './developers/LoganUibel.vue'
+=======
+import AustinWright from './developers/AustinWright.vue'
+import ThorAnderson from './developers/ThorAnderson.vue'
+>>>>>>> upstream/developers
 //import { people } from './assets/people'
 import axios from 'axios'
 export default {
@@ -19,6 +24,10 @@ export default {
   components: {
     PersonGrid,
     AustinWright,
+<<<<<<< HEAD
+=======
+    ThorAnderson
+>>>>>>> upstream/developers
   },
   data: () => {
     return {
@@ -27,7 +36,7 @@ export default {
   },
   created: function () {
     // `this` points to the vm instance
-    let vm = this
+    //let vm = this
       fetch('https://jsonplaceholder.typicode.com/todos/1')
   .then(response => response.json())
   .then(json => console.log(json))
