@@ -6,25 +6,26 @@
       <austin-wright></austin-wright>
       <julie-halversen></julie-halversen>
       <thor-anderson></thor-anderson>
+      <daniel-purrington></daniel-purrington>
     </v-content>
   </v-app>
 </template>
 
 <script>
-import PersonGrid from './components/PersonGrid'
-import AustinWright from './developers/AustinWright.vue'
+import PersonGrid from './components/PersonGrid';
+import AustinWright from './developers/AustinWright.vue';
 import JulieHalversen from './developers/JulieHalversen.vue';
-
-import ThorAnderson from './developers/ThorAnderson.vue'
-//import { people } from './assets/people'
-import axios from 'axios'
+import ThorAnderson from './developers/ThorAnderson.vue';
+import DanielPurrington from './developers/DanielPurrington.vue';
+import axios from 'axios';
 export default {
   name: 'App',
   components: {
     PersonGrid,
     AustinWright,
-    JulieHalversen
-    ThorAnderson
+    JulieHalversen,
+    ThorAnderson,
+    DanielPurrington,
   },
   data: () => {
     return {
