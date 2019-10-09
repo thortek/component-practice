@@ -6,6 +6,7 @@
       <austin-wright></austin-wright>
       <julie-halversen></julie-halversen>
       <thor-anderson></thor-anderson>
+      <coby-yates></coby-yates>
     </v-content>
   </v-app>
 </template>
@@ -14,6 +15,7 @@
 import PersonGrid from './components/PersonGrid'
 import AustinWright from './developers/AustinWright.vue'
 import JulieHalversen from './developers/JulieHalversen.vue';
+import CobyYates from './developers/CobyYates'
 
 import ThorAnderson from './developers/ThorAnderson.vue'
 //import { people } from './assets/people'
@@ -23,8 +25,9 @@ export default {
   components: {
     PersonGrid,
     AustinWright,
-    JulieHalversen
-    ThorAnderson
+    JulieHalversen,
+    ThorAnderson,
+    CobyYates,
   },
   data: () => {
     return {
