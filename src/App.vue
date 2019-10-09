@@ -24,7 +24,7 @@ export default {
     PersonGrid,
     AustinWright,
     ThorAnderson,
-    IsaacIngles
+    IsaacIngles,
   },
   data: () => {
     return {
