@@ -3,8 +3,14 @@
     <v-card-title>Peter Beard</v-card-title>
     <v-card-text>This is a component added by Peter Beard</v-card-text>
     <v-card-action>
-      <label for="userMessage">Send type message for Peter:</label>
-      <textarea id="userMessage" v-model="userInput"></textarea>
+      <v-textarea
+        v-model="userInput"
+        :auto-grow="true"
+        :clearable="true"
+        :label="'Send type message for Peter:'"
+        :solo="true"
+        :rules="validation"
+      ></v-textarea>
     </v-card-action>
   </v-card>
 </template>
@@ -16,7 +22,11 @@ export default {
       userName: "Peter Beard",
       github: "Gibriil"
     },
-    userInput: null
+    userInput: null,
+    validation: [
+      value =>
+        !value.match(/[<>]{1,}/g) || "Input must not contain code characters"
+    ]
   })
 };
 </script>
