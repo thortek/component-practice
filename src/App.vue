@@ -6,6 +6,7 @@
       <austin-wright></austin-wright>
       <julie-halversen></julie-halversen>
       <thor-anderson></thor-anderson>
+      <IsaacIngles></IsaacIngles>
     </v-content>
   </v-app>
 </template>
@@ -16,6 +17,8 @@ import AustinWright from './developers/AustinWright.vue'
 import JulieHalversen from './developers/JulieHalversen.vue';
 
 import ThorAnderson from './developers/ThorAnderson.vue'
+import IsaacIngles from './developers/isaacingles'
+
 //import { people } from './assets/people'
 import axios from 'axios'
 export default {
@@ -23,8 +26,9 @@ export default {
   components: {
     PersonGrid,
     AustinWright,
-    JulieHalversen,
     ThorAnderson,
+    IsaacIngles,
+    JulieHalversen,
   },
   data: () => {
     return {
