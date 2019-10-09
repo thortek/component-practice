@@ -5,6 +5,7 @@
      <!--  <v-btn @click="getData">Get Data!!</v-btn> -->
       <austin-wright></austin-wright>
       <thor-anderson></thor-anderson>
+      <IsaacIngles></IsaacIngles>
     </v-content>
   </v-app>
 </template>
@@ -13,6 +14,8 @@
 import PersonGrid from './components/PersonGrid'
 import AustinWright from './developers/AustinWright.vue'
 import ThorAnderson from './developers/ThorAnderson.vue'
+import IsaacIngles from './developers/isaacingles'
+
 //import { people } from './assets/people'
 import axios from 'axios'
 export default {
@@ -20,7 +23,8 @@ export default {
   components: {
     PersonGrid,
     AustinWright,
-    ThorAnderson
+    ThorAnderson,
+    IsaacIngles
   },
   data: () => {
     return {
