@@ -4,14 +4,21 @@
       <person-grid :people="people"></person-grid>
      <!--  <v-btn @click="getData">Get Data!!</v-btn> -->
       <austin-wright></austin-wright>
+      <julie-halversen></julie-halversen>
       <thor-anderson></thor-anderson>
+      <IsaacIngles></IsaacIngles>
     </v-content>
   </v-app>
 </template>
 
 <script>
 import PersonGrid from './components/PersonGrid'
-import AustinWright from './developers/AustinWright.vue';
+import AustinWright from './developers/AustinWright.vue'
+import JulieHalversen from './developers/JulieHalversen.vue';
+
+import ThorAnderson from './developers/ThorAnderson.vue'
+import IsaacIngles from './developers/isaacingles'
+
 //import { people } from './assets/people'
 import axios from 'axios'
 export default {
@@ -19,6 +26,9 @@ export default {
   components: {
     PersonGrid,
     AustinWright,
+    ThorAnderson,
+    IsaacIngles,
+    JulieHalversen,
   },
   data: () => {
     return {
