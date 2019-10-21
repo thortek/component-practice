@@ -60,6 +60,19 @@ export default {
 		}
 	}
 }
+
+Vue.directive('box-shadow', {
+    bind(el, binding) {
+        let blur = 0
+        if (binding.modifiers['blur']) {
+            blur = 5
+        }
+        if (binding.arg == 'offset') {
+            el.style.boxShasow = `3px ${binding.value}px ${blur}px #222`;
+        }
+    }
+ })
+ 
 </script>
 
 <style scoped>
