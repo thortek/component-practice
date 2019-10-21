@@ -1,6 +1,6 @@
 <template>
   <v-app>
-    <v-content  class="d-flex flex-column align-center">
+    <v-content class="d-flex flex-column align-center">
       <person-grid :people="people"></person-grid>
      <!--  <v-btn @click="getData">Get Data!!</v-btn> -->
       <austin-wright></austin-wright>
