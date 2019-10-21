@@ -7,7 +7,7 @@
       <v-card-title>Maurina Davis</v-card-title>
       <v-card-text>Fall is here!</v-card-text>
     </v-card>
-    <v-form>
+    <v-form v-model="valid">
       <v-container>
         <v-row>
   
@@ -15,7 +15,9 @@
             <v-text-field
               v-model="first"
               label="First Name"
+              required
               outlined
+              :rules="nameRules"
             ></v-text-field>
           </v-col>
   
@@ -24,6 +26,8 @@
               v-model="last"
               label="Last Name"
               outlined
+              required 
+              :rules="nameRules"
             ></v-text-field>
           </v-col>
   
@@ -38,6 +42,9 @@ export default {
  data: () => ({
     first: 'John',
     last: 'Doe',
+    nameRules: [
+      v => !!v || 'Name is required'
+    ]
    
   })
 }

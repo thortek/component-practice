@@ -4,7 +4,6 @@ import vuetify from './plugins/vuetify';
 
 Vue.config.productionTip = false
 
-
 Vue.directive('box-shadow', {
   bind(el, binding) {
     let blur = 0
@@ -12,23 +11,19 @@ Vue.directive('box-shadow', {
       blur = 5
     }
     if (binding.arg === 'offset') {
-      el.style.boxShadow = `0px ${binding.value}px ${blur}px #222`
+      el.style.boxShadow = `3px ${binding.value}px ${blur}px #222`
     } else {
-      el.style.boxShadow = `5px 5px 5px #666`
+      el.style.boxShadow = `6px 6px 12px #666`
     }
   }
 })
 
-
-// Register a global custom directive called `v-focus`
-Vue.directive('focus', {
-  // When the bound element is inserted into the DOM...
-  inserted: function (el) {
-    // Focus the element
-    el.focus()
+Vue.directive('pop', {
+  bind: function (el, binding, vnode) {
+    el.style.position = 'fixed'
+    el.style.right = binding.value + 'px'
   }
 })
-
 
 new Vue({
   vuetify,
