@@ -1,6 +1,6 @@
 <template>
-<div>
-        <h1>Julie Halversen</h1>
+<div v-box-shadow:offset>
+        <h1 v-box-shadow:offset='30'>Julie Halversen</h1>
 
     <v-form
       ref="form"
@@ -66,6 +66,19 @@
 
 <script>
 export default {
+  components: {
+    /*
+    directives: {
+      focus: {
+        // directive definition
+        inserted: function (el) {
+          el.focus()
+        }
+      },
+    } */
+  },
+
+
 data: () => ({
     valid: true,
     name: '',

@@ -21,7 +21,7 @@ export default {
   components: {
     PersonGrid,
     AustinWright,
-    JulieHalversen
+    JulieHalversen,
   },
   data: () => {
     return {
