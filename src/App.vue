@@ -19,7 +19,7 @@ import PeterBeard from './developers/PeterBeard.vue';
 import PersonGrid from './components/PersonGrid';
 import AustinWright from './developers/AustinWright.vue';
 import JulieHalversen from './developers/JulieHalversen.vue';
-
+import IsaacIngles from './developers/isaacingles.vue'
 import ThorAnderson from './developers/ThorAnderson.vue'
 //import { people } from './assets/people'
 import axios from 'axios'
@@ -31,6 +31,7 @@ export default {
     JulieHalversen,
     ThorAnderson,
     DanielPurrington,
+    IsaacIngles
   },
   data: () => {
     return {
