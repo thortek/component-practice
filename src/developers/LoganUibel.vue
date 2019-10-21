@@ -1,8 +1,8 @@
 <template>
 <div>
   <v-card
-    class="mx-auto pa-2 ma-2"
-    dark
+    class="mx-auto pa-2 ma-2 card"
+    v-gray-mode
   >
     <v-card-title class="pl-2">Logan Uibel - Form Input</v-card-title>
     <v-card-action>
@@ -67,8 +67,6 @@
 
 
 <script>
-
-
   export default {
     data: () => ({
       name: "Logan Uibel",
@@ -97,7 +95,15 @@
         this.$refs.form.reset()
       },
     },
+    directives: {
+      'gray-mode': {
+        bind(el, binding, vnode) {
+          el.style.backgroundColor = '#e0e0e0';
+        }
+    }
   }
+}
+
 </script>
 
 
