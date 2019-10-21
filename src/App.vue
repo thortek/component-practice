@@ -9,11 +9,13 @@
       <daniel-purrington></daniel-purrington>
       <coby-yates v-pop="150"></coby-yates>
       <IsaacIngles></IsaacIngles>
+      <peter-beard />
     </v-content>
   </v-app>
 </template>
 
 <script>
+import PeterBeard from './developers/PeterBeard.vue';
 import PersonGrid from './components/PersonGrid';
 import AustinWright from './developers/AustinWright.vue';
 import JulieHalversen from './developers/JulieHalversen.vue';
