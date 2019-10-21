@@ -6,7 +6,7 @@
       <austin-wright></austin-wright>
       <julie-halversen></julie-halversen>
       <thor-anderson></thor-anderson>
-      <coby-yates></coby-yates>
+      <coby-yates v-pop="150"></coby-yates>
     </v-content>
   </v-app>
 </template>
