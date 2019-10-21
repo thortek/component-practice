@@ -3,8 +3,9 @@
     <v-container>
         <v-layout>
         
-        <v-card hover v-box-shadow:offset.blur="15">
-            <v-card hover>
+
+        <v-flex xs12 sm6>
+            <v-card hover v-box-shadow:offset.blur="15">
             
             <v-card-media
                 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeU5XE2kJmWfuNebcOieRaotnvrZcc6xgt78M4TEHn21DoNzA-"
@@ -72,7 +73,10 @@ Vue.directive('box-shadow', {
         }
     }
  })
+<<<<<<< HEAD
  
+=======
+>>>>>>> master
 </script>
 
 <style scoped>
@@ -81,6 +85,11 @@ Vue.directive('box-shadow', {
 	color: grey;
 }
 ul {
+<<<<<<< HEAD
   text-decoration: none;
 }
+=======
+  list-style-type: none;
+ }
+>>>>>>> master
 </style>
