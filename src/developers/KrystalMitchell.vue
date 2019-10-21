@@ -3,8 +3,9 @@
     <v-container>
         <v-layout>
         
+
         <v-flex xs12 sm6>
-            <v-card hover>
+            <v-card hover v-box-shadow:offset.blur="15">
             
             <v-card-media
                 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeU5XE2kJmWfuNebcOieRaotnvrZcc6xgt78M4TEHn21DoNzA-"
@@ -60,6 +61,22 @@ export default {
 		}
 	}
 }
+
+Vue.directive('box-shadow', {
+    bind(el, binding) {
+        let blur = 0
+        if (binding.modifiers['blur']) {
+            blur = 5
+        }
+        if (binding.arg == 'offset') {
+            el.style.boxShasow = `3px ${binding.value}px ${blur}px #222`;
+        }
+    }
+ })
+<<<<<<< HEAD
+ 
+=======
+>>>>>>> master
 </script>
 
 <style scoped>
@@ -68,6 +85,11 @@ export default {
 	color: grey;
 }
 ul {
+<<<<<<< HEAD
   text-decoration: none;
 }
+=======
+  list-style-type: none;
+ }
+>>>>>>> master
 </style>
