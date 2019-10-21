@@ -1,7 +1,6 @@
 <template>
-    <v-row>
+    <v-row v-rotate:cw="3">
         <v-col cols="12">
-            <h1>This is my addition</h1>
             <v-form v-model="valid">
                 <v-text-field
                     :rules="nameRules"
@@ -24,7 +23,7 @@ export default {
               if(value) {
                   return;
               } else {
-                  return "name is Required";
+                  return "Name is Required";
               }
           }
           /*
@@ -36,7 +35,17 @@ export default {
 
       ]
     }),
-
+    directives: {
+        'rotate': {
+            bind(el, binding, vnode) {
+                if(binding.arg === 'ccw') {
+                    el.style.transform = `rotate(-${binding.value}deg)`;
+                } else if(binding.arg === 'cw') {
+                    el.style.transform = `rotate(${binding.value}deg)`;            
+                }
+            }
+        }
+    },
 }
 </script>
 

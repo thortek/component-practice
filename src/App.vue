@@ -7,6 +7,7 @@
       <julie-halversen></julie-halversen>
       <thor-anderson></thor-anderson>
       <IsaacIngles></IsaacIngles>
+      <ryan-manwill></ryan-manwill>
     </v-content>
   </v-app>
 </template>
@@ -18,6 +19,7 @@ import JulieHalversen from './developers/JulieHalversen.vue';
 
 import ThorAnderson from './developers/ThorAnderson.vue'
 import IsaacIngles from './developers/isaacingles'
+import RyanManwill from './developers/RyanManwill.vue'
 
 //import { people } from './assets/people'
 import axios from 'axios'
@@ -29,6 +31,7 @@ export default {
     ThorAnderson,
     IsaacIngles,
     JulieHalversen,
+    RyanManwill,
   },
   data: () => {
     return {
