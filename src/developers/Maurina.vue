@@ -9,7 +9,7 @@
     </v-card>
     <v-form v-model="valid">
       <v-container>
-        <v-row>
+        <v-row v-background.dark>
   
           <v-col cols="12" sm="6">
             <v-text-field
