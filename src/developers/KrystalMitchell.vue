@@ -3,7 +3,7 @@
     <v-container>
         <v-layout>
         
-        <v-flex xs12 sm6>
+        <v-card hover v-box-shadow:offset.blur="15">
             <v-card hover>
             
             <v-card-media
