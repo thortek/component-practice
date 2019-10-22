@@ -1,6 +1,6 @@
 <template>
 <div v-box-shadow:offset>
-        <h1 v-box-shadow:offset='30'>Julie Halversen</h1>
+        <h1 v-local-highlight:background.delayed="'grey'">Julie Halversen</h1>
 
     <v-form
       ref="form"
@@ -66,19 +66,27 @@
 
 <script>
 export default {
-  components: {
-    /*
-    directives: {
-      focus: {
-        // directive definition
-        inserted: function (el) {
-          el.focus()
+  directives: {
+    'local-highlight': {
+      bind(el, binding, vnode) {
+        var delay = 0;
+        if (binding.modifiers['delayed']) {
+          delay = 3000;
         }
-      },
-    } */
+        setTimeout(() => {
+          if(binding.arg == 'background') {
+            el.style.backgroundColor = binding.value;
+            el.style.color = 'white';
+          } else {
+            el.style.color = binding.value;
+          }
+        }, delay);
+      }
+    }
   },
+  components: {
 
-
+  },
 data: () => ({
     valid: true,
     name: '',
