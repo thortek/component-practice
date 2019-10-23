@@ -3,6 +3,7 @@
     <v-content  class="d-flex flex-column align-center">
       <person-grid :people="people"></person-grid>
      <!--  <v-btn @click="getData">Get Data!!</v-btn> -->
+     <jose v-highlight></jose>
       <austin-wright></austin-wright>
       <julie-halversen></julie-halversen>
       <thor-anderson></thor-anderson>

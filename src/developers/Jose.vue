@@ -1,18 +1,10 @@
 <template>
   <v-app>
-    <v-content>
-        <h1>Jose Cisneros</h1>
-    </v-content>
     <v-row align="center">
-    <v-row justify="space-around">
-      <v-switch v-model="valid" class="ma-4" label="Valid" readonly></v-switch>
-      <v-switch v-model="lazy" class="ma-4" label="Lazy"></v-switch>
-    </v-row>
     <v-form
       ref="form"
-      v-model="valid"
-      :lazy-validation="lazy"
     >
+      <h1>Jose Cisneros</h1>
       <v-text-field
         v-model="name"
         :counter="10"
@@ -27,21 +19,6 @@
         label="E-mail"
         required
       ></v-text-field>
-
-      <v-select
-        v-model="select"
-        :items="items"
-        :rules="[v => !!v || 'Item is required']"
-        label="Item"
-        required
-      ></v-select>
-
-      <v-checkbox
-        v-model="checkbox"
-        :rules="[v => !!v || 'You must agree to continue!']"
-        label="Do you agree?"
-        required
-      ></v-checkbox>
 
       <v-btn
         :disabled="!valid"
