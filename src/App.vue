@@ -19,6 +19,7 @@ import PeterBeard from './developers/PeterBeard.vue';
 import PersonGrid from './components/PersonGrid';
 import AustinWright from './developers/AustinWright.vue';
 import JulieHalversen from './developers/JulieHalversen.vue';
+import CobyYates from './developers/CobyYates.vue'
 
 
 import ThorAnderson from './developers/ThorAnderson.vue'
@@ -31,6 +32,8 @@ export default {
     AustinWright,
     JulieHalversen,
     ThorAnderson,
+    DanielPurrington,
+    CobyYates,
     PeterBeard
   },
   data: () => {
